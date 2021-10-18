@@ -1,3 +1,3 @@
 class BuildingSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :location, :price, :description, :available?
 end

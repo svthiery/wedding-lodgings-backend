@@ -1,3 +1,3 @@
 class BedSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :category, :numPeople, :room_id
 end
