@@ -5,6 +5,9 @@ class CreateBuildings < ActiveRecord::Migration[6.0]
       t.string :location
       t.integer :price
       t.string :description
+      t.string :category
+      t.string :capacity
+      t.string :format
       t.boolean :available?
 
       t.timestamps
