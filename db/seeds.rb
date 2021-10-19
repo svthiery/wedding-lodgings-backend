@@ -11,7 +11,7 @@ Room.destroy_all
 Bed.destroy_all
 Person.destroy_all 
 
-one = Building.create(name: "La Suite de l'Orangerie", location: "Le parc", price: , category: , capacity: , format: , description: , available?: true)
+one = Building.create(name: "La Suite de l'Orangerie", location: "Le parc", price: 250, category: "Independent house with terrace", capacity: "2-5 people", available?: false)
 
 two = Building.create(name: "Au Pigeonnier", location: "Le parc", price: 350, category: "House", capacity: "7 people", format: "
 living room / bedroom, 2 bedrooms,
@@ -113,13 +113,68 @@ The bathroom & shower room are equipped as follows:
 1 hair dryer and 1 mirror in the bathroom
 Towels are provided.", available?: true)
 
-six = Building.create(name: , location: , price: , category: , capacity: , format: , description: , available?: true)
+six = Building.create(name: "Au Champ d'Avoine", location: "La ferme d'à côté", price: 200, category: "Apartment", capacity: "4 people", format: "
+living room, 
+2 bedrooms,
+1 bathroom, 
+1 wc, 
+1 floor, 
+garden", description: "
+- on the ground floor
+1 bedroom with 2 single beds,
+1 living room,
+A fully-equipped kitchen,
+1 bathroom,
+1 wc
+- on the 1st floor
+1 bedroom with 2 single beds
 
-seven = Building.create(name: , location: , price: , category: , capacity: , format: , description: , available?: true)
+To make your stay pleasant, beds are made on your arrival.
+For your preparations: An ironing board and iron are at your disposal.
+A full-length mirror is installed.
+The Kitchen is equipped as follows:
+A fridge freezer, dishwasher, microwave oven, induction hob, oven,
+toaster, kettle, coffee machine, and crockery adapted to the capacity of the house.
+Capsules of coffee, tea, water are at your disposal.
+The Bathroom is equipped as follows:
+Towels are provided.
+1 hair dryer and 1 mirror in the bathroom.", available?: true)
 
-eight = Building.create(name: , location: , price: , category: , capacity: , format: , description: , available?: true)
+seven = Building.create(name: "Au Grain d'Orge", location: "La ferme d'à côté", price: 450, category: "Independent house", capacity: "9 people", format: "
+living room / bedrooms, 3 bedrooms, 1 bathroom
+wc, 1 bathroom, 2 separate / independent toilets", description: "
+- on level 1: 1st floor
+1 bedroom with 3 single beds
+1 living room (convertible sofa), an equipped kitchen
+separate toilet, 1 bathroom
+- on level 2: on the 2nd floor
+2 bedrooms with 2 single beds,
+1 bathroom, with separate toilet
 
-nine = Building.create(name: , location: , price: , category: , capacity: , format: , description: , available?: true)
+To make your stay pleasant, beds are made on your arrival.
+For your preparations: An ironing board and iron are at your disposal. A full mirror is installed.
+The Kitchen is equipped as follows:
+A fridge freezer, dishwasher, microwave oven, induction hob, oven
+Toaster, kettle, coffee machine and crockery adapted to the capacity of the house.
+Capsules of coffee, tea, water are at your disposal.
+The bathroom & shower room are equipped as follows:
+1 hair dryer and 1 mirror in the bathroom.
+1 hair dryer and 1 mirror in the bathroom
+Towels are provided.", available?: true)
 
-ten = Building.create(name: , location: , price: , category: , capacity: , format: , description: , available?: true)
+eight = Building.create(name: "Le Grenier", location: "La ferme d'à côté", price: 250, category: "Apartment", capacity: "5 people", format: "Everything is on the 1st floor: Equipped kitchen, 2 bedrooms, living room, 1 bathroom,
+1 WC, garden", description: "Everything is on the 1st floor: Equipped kitchen, 2 bedrooms, living room, 1 bathroom,
+1 WC, garden", available?: true)
+
+nine = Building.create(name: "Le Grand Saule", location: "La ferme d'à côté", price: 500, category: "Apartment", capacity: "10 people", format: "
+- Ground floor: Equipped kitchen, 2 bedrooms, living room, 2 bathrooms, 1
+WC, garden
+- 1
+1st floor: 2 bedrooms, a bathroom, 1 WC", description: "
+- Ground floor: Equipped kitchen, 2 bedrooms, living room, 2 bathrooms, 1
+WC, garden
+- 1
+1st floor: 2 bedrooms, a bathroom, 1 WC", available?: true)
+
+ten = Building.create(name: "La Maison Du Cocher", location: "La ferme d'à côté", price: null, category: "N/A", capacity: "6 people", format: "N/A", description: "N/A", available?: true)
 
