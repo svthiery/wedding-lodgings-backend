@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_10_18_195321) do
 
   create_table "beds", force: :cascade do |t|
     t.string "category"
-    t.integer "numPeople"
+    t.integer "num_people"
     t.integer "room_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2021_10_18_195321) do
   end
 
   create_table "people", force: :cascade do |t|
-    t.string "fullName"
+    t.string "full_name"
     t.string "email"
     t.integer "bed_id"
     t.datetime "created_at", precision: 6, null: false

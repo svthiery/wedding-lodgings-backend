@@ -249,72 +249,144 @@ Room.create(name: "Chambre 31", price: 110, description: "First floor, two singl
 # 33
 Room.create(name: "Chambre 32", price: 110, description: "First floor, two single beds", bathroom: "Shared between chambres 31 and 32", available?: true, building_id: 9)
 # 34
-Room.create(name: "Sejour traversant (La Maison Du Cocher)", price: , description: "Ground floor, sofa bed. Included in total price for La Maison du Cocher", bathroom: "Shared", available?: false, building_id: 10)
+Room.create(name: "Sejour traversant (La Maison Du Cocher)", price: 0, description: "Ground floor, sofa bed. Included in total price for La Maison du Cocher", bathroom: "Shared", available?: false, building_id: 10)
 # 35
-Room.create(name: "Chambre 33", price: 0, description: "Ground floor, two single beds", bathroom: "Shared between chambres 33 and 34", available?: false, building_id: )
+Room.create(name: "Chambre 33", price: 0, description: "Ground floor, two single beds", bathroom: "Shared between chambres 33 and 34", available?: false, building_id: 10)
 # 36
-Room.create(name: "Chambre 34", price: 0, description: "Ground floor, two single beds", bathroom: "Shared between chambres 33 and 34", available?: false, building_id: )
+Room.create(name: "Chambre 34", price: 0, description: "Ground floor, two single beds", bathroom: "Shared between chambres 33 and 34", available?: false, building_id: 10)
 
 
 # -------------------- BEDS -----------------------------------------
 
 # 1
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 1)
 # 2
+Bed.create(category: "Double bed", num_people: 2, room_id: 2)
 # 3
+Bed.create(category: "Single bed", num_people: 1, room_id: 3)
 # 4
+Bed.create(category: "Single bed", num_people: 1, room_id: 3)
 # 5
+Bed.create(category: "Single bed", num_people: 1, room_id: 3)
 # 6
+Bed.create(category: "Double bed", num_people: 2, room_id: 4)
 # 7
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 5)
 # 8
+Bed.create(category: "Single bed", num_people: 1, room_id: 6)
 # 9
+Bed.create(category: "Single bed", num_people: 1, room_id: 6)
 # 10
+Bed.create(category: "Single bed", num_people: 1, room_id: 7)
 # 11
+Bed.create(category: "Single bed", num_people: 1, room_id: 7)
 # 12
+Bed.create(category: "Single bed", num_people: 1, room_id: 8)
 # 13
+Bed.create(category: "Single bed", num_people: 1, room_id: 8)
 # 14
+Bed.create(category: "Double bed", num_people: 2, room_id: 9)
 # 15
+Bed.create(category: "Crib", num_people: 1, room_id: 9)
 # 16
+Bed.create(category: "Bunk bed", num_people: 2, room_id: 10)
 # 17
+Bed.create(category: "Bunk bed", num_people: 2, room_id: 10)
 # 18
+Bed.create(category: "Bunk bed", num_people: 2, room_id: 10)
 # 19
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 11)
 # 20
+Bed.create(category: "Single bed", num_people: 1, room_id: 12)
 # 21
+Bed.create(category: "Single bed", num_people: 1, room_id: 12)
 # 22
+Bed.create(category: "Bunk bed", num_people: 2, room_id: 13)
 # 23
+Bed.create(category: "Single bed", num_people: 1, room_id: 13)
 # 24
+Bed.create(category: "Single bed", num_people: 1, room_id: 14)
 # 25
+Bed.create(category: "Single bed", num_people: 1, room_id: 14)
 # 26
+Bed.create(category: "Double bed", num_people: 2, room_id: 15)
 # 27
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 16)
 # 28
+Bed.create(category: "Single bed", num_people: 1, room_id: 17)
 # 29
+Bed.create(category: "Single bed", num_people: 1, room_id: 17)
 # 30
+Bed.create(category: "Single bed", num_people: 1, room_id: 17)
 # 31
+Bed.create(category: "Single bed", num_people: 1, room_id: 18)
 # 32
+Bed.create(category: "Single bed", num_people: 1, room_id: 18)
 # 33
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 19)
 # 34
+Bed.create(category: "Double bed", num_people: 2, room_id: 20)
 # 35
+Bed.create(category: "Single bed", num_people: 1, room_id: 21)
 # 36
+Bed.create(category: "Single bed", num_people: 1, room_id: 21)
 # 37
+Bed.create(category: "Single bed", num_people: 1, room_id: 22)
 # 38
+Bed.create(category: "Single bed", num_people: 1, room_id: 22)
 # 39
+Bed.create(category: "Single bed", num_people: 1, room_id: 22)
 # 40
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 23)
 # 41
+Bed.create(category: "Single bed", num_people: 1, room_id: 24)
 # 42
+Bed.create(category: "Single bed", num_people: 1, room_id: 24)
 # 43
+Bed.create(category: "Single bed", num_people: 1, room_id: 25)
 # 44
+Bed.create(category: "Single bed", num_people: 1, room_id: 25)
 # 45
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 26)
 # 46
+Bed.create(category: "Single bed", num_people: 1, room_id: 27)
 # 47
+Bed.create(category: "Single bed", num_people: 1, room_id: 27)
 # 48
+Bed.create(category: "Single bed", num_people: 1, room_id: 27)
 # 49
+Bed.create(category: "Single bed", num_people: 1, room_id: 28)
 # 50
+Bed.create(category: "Single bed", num_people: 1, room_id: 28)
 # 51
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 29)
 # 52
+Bed.create(category: "Double bed", num_people: 2, room_id: 30)
 # 53
+Bed.create(category: "Bunk bed", num_people: 2, room_id: 31)
 # 54
+Bed.create(category: "Single bed", num_people: 1, room_id: 31)
 # 55
+Bed.create(category: "Single bed", num_people: 1, room_id: 31)
 # 56
+Bed.create(category: "Single bed", num_people: 1, room_id: 32)
 # 57
+Bed.create(category: "Single bed", num_people: 1, room_id: 32)
 # 58
+Bed.create(category: "Single bed", num_people: 1, room_id: 33)
 # 59
+Bed.create(category: "Single bed", num_people: 1, room_id: 33)
 # 60
+Bed.create(category: "Sofa bed", num_people: 2, room_id: 34)
+# 61
+Bed.create(category: "Single bed", num_people: 1, room_id: 35)
+# 62
+Bed.create(category: "Single bed", num_people: 1, room_id: 35)
+# 63
+Bed.create(category: "Single bed", num_people: 1, room_id: 36)
+# 64
+Bed.create(category: "Single bed", num_people: 1, room_id: 36)
+# 65
+# 66
+# 67
+# 68
