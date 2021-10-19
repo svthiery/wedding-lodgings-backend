@@ -11,6 +11,8 @@ Room.destroy_all
 Bed.destroy_all
 Person.destroy_all 
 
+# -------------------- BUILDINGS -----------------------------------------
+
 one = Building.create(name: "La Suite de l'Orangerie", location: "Le parc", price: 250, category: "Independent house with terrace", capacity: "2-5 people", available?: false)
 
 two = Building.create(name: "Au Pigeonnier", location: "Le parc", price: 350, category: "House", capacity: "7 people", format: "
@@ -176,5 +178,143 @@ WC, garden
 - 1
 1st floor: 2 bedrooms, a bathroom, 1 WC", available?: true)
 
-ten = Building.create(name: "La Maison Du Cocher", location: "La ferme d'à côté", price: null, category: "N/A", capacity: "6 people", format: "N/A", description: "N/A", available?: true)
+ten = Building.create(name: "La Maison Du Cocher", location: "La ferme d'à côté", price: 0, category: "N/A", capacity: "6 people", format: "N/A", description: "N/A", available?: true)
 
+# -------------------- ROOMS -----------------------------------------
+
+# 1
+Room.create(name: "Chambre Salon 3", price: 80, description: "Ground floor, sofa bed", bathroom: "Shared between chambres 3 and 4", available?: true, building_id: 2)
+# 2
+Room.create(name: "Chambre 4", price: 120, description: "Ground floor, double bed", bathroom: "Shared between chambres 3 and 4", available?: true, building_id: 2)
+# 3
+Room.create(name: "Chambre 5", price: 150, description: "First floor, three single beds", bathroom: "Adjoining", available?: true, building_id: 2)
+# 4
+Room.create(name: "Chambre 6", price: 110, description: "First floor, double bed. Connected with chambre salon 7", bathroom: "Shared between chambres 6, 7, and 8", available?: true, building_id: 3)
+# 5
+Room.create(name: "Chambre Salon 7", price: 50, description: "First floor, sofa bed. Connected with room 6", bathroom: "Shared between chambres 6, 7, and 8", available?: true, building_id: 3)
+# 6
+Room.create(name: "Chambre 8", price: 130, description: "First floor, two single beds", bathroom: "Shared between chambres 6, 7, and 8", available?: true, building_id: 3)
+# 7
+Room.create(name: "Chambre 9", price: 130, description: "First floor, two single beds", bathroom: "Shared between chambres 9, 10, and 11", available?: true, building_id: 3)
+# 8
+Room.create(name: "Chambre 10", price: 130, description: "First floor, two single beds", bathroom: "Shared between chambres 9, 10, and 11", available?: true, building_id: 3)
+# 9
+Room.create(name: "Chambre 11", price: 130, description: "First floor, one double bed and one crib", bathroom: "Shared between chambres 9, 10, and 11", available?: true, building_id: 3)
+# 10
+Room.create(name: "Chambre 12", price: 220, description: "First floor, three bunkbeds", bathroom: "Shared", available?: true, building_id: 3)
+# 11
+Room.create(name: "Chambre 13 (sejour traversant)", price: 0, description: "Ground floor, sofa bed. Included in total price for La Maison des Gardes", bathroom: "Shared", available?: false, building_id: 4)
+# 12
+Room.create(name: "Chambre 14", price: 160, description: "Ground floor, two single beds", bathroom: "Adjoining", available?: true, building_id: 4)
+# 13
+Room.create(name: "Chambre 15", price: 120, description: "First floor, one bunkbed and one single bed", bathroom: "Shared between chambres 15 and 16", available?: true, building_id: 4)
+# 14
+Room.create(name: "Chambre 16", price: 120, description: "First floor, two single beds", bathroom: "Shared between chambres 15 and 16", available?: true, building_id: 4)
+# 15
+Room.create(name: "Chambre 17", price: 120, description: "Ground floor, double bed", bathroom: "Shared between chambre 17 and chambre salon 18", available?: true, building_id: 5)
+# 16
+Room.create(name: "Chambre Salon 18", price: 70, description: "Ground floor, sofa bed", bathroom: "Shared between chambre 17 and chambre salon 18", available?: true, building_id: 5)
+# 17
+Room.create(name: "Chambre 19", price: 140, description: "First floor, three single beds", bathroom: "Shared between chambres 19 and 20", available?: true, building_id: 5)
+# 18
+Room.create(name: "Chambre 20", price: 120, description: "First floor, two single beds", bathroom: "Shared between chambres 19 and 20", available?: true, building_id: 5)
+# 19
+Room.create(name: "Sejour traversant (Au Champ d'Avoine)", price: 0, description: "Ground floor, sofa bed. Included in total price for Au Champ d'Avoine", bathroom: "Shared", available?: false, building_id: 6)
+# 20
+Room.create(name: "Chambre 21", price: 100, description: "Ground floor, double bed", bathroom: "Shared", available?: true, building_id: 6)
+# 21
+Room.create(name: "Chambre 22", price: 100, description: "First floor, two single beds", bathroom: "Shared", available?: true, building_id: 6)
+# 22
+Room.create(name: "Chambre 23", price: 120, description: "First floor, three single beds", bathroom: "Shared between chambre 23 and chambre salon 24", available?: true, building_id: 7)
+# 23
+Room.create(name: "Chambre Salon 24", price: 80, description: "First floor, sofa bed", bathroom: "Shared between chambre 23 and chambre salon 24", available?: true, building_id: 7)
+# 24
+Room.create(name: "Chambre 25", price: 125, description: "Second floor, two single beds", bathroom: "Shared between chambres 25 and 26", available?: true, building_id: 7)
+# 25
+Room.create(name: "Chambre 26", price: 125, description: "Second floor, two single beds", bathroom: "Shared between chambres 25 and 26", available?: true, building_id: 7)
+# 26
+Room.create(name: "Sejour traversant (Le Grenier)", price: 0, description: "First floor, sofa bed. Included in total price for Le Grenier", bathroom: "Shared", available?: false, building_id: 8)
+# 27
+Room.create(name: "Chambre 27", price: 125, description: "First floor, three single beds", bathroom: "Shared between chambres 27 and 28", available?: true, building_id: 8)
+# 28
+Room.create(name: "Chambre 28", price: 125, description: "First floor, two single beds", bathroom: "Shared between chambres 27 and 28", available?: true, building_id: 8)
+# 29
+Room.create(name: "Sejour traversant (Le Grand Saule)", price: 60, description: "Ground floor, sofa bed", bathroom: "Shared", available?: true, building_id: 9)
+# 30
+Room.create(name: "Chambre 29", price: 100, description: "Ground floor, double bed", bathroom: "Shared between chambres 29 and 30", available?: true, building_id: 9)
+# 31
+Room.create(name: "Chambre 30", price: 120, description: "Ground floor, one bunk bed and two single beds", bathroom: "Shared between chambres 29 and 30", available?: true, building_id: 9)
+# 32
+Room.create(name: "Chambre 31", price: 110, description: "First floor, two single beds", bathroom: "Shared between chambres 31 and 32", available?: true, building_id: 9)
+# 33
+Room.create(name: "Chambre 32", price: 110, description: "First floor, two single beds", bathroom: "Shared between chambres 31 and 32", available?: true, building_id: 9)
+# 34
+Room.create(name: "Sejour traversant (La Maison Du Cocher)", price: , description: "Ground floor, sofa bed. Included in total price for La Maison du Cocher", bathroom: "Shared", available?: false, building_id: 10)
+# 35
+Room.create(name: "Chambre 33", price: 0, description: "Ground floor, two single beds", bathroom: "Shared between chambres 33 and 34", available?: false, building_id: )
+# 36
+Room.create(name: "Chambre 34", price: 0, description: "Ground floor, two single beds", bathroom: "Shared between chambres 33 and 34", available?: false, building_id: )
+
+
+# -------------------- BEDS -----------------------------------------
+
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 20
+# 21
+# 22
+# 23
+# 24
+# 25
+# 26
+# 27
+# 28
+# 29
+# 30
+# 31
+# 32
+# 33
+# 34
+# 35
+# 36
+# 37
+# 38
+# 39
+# 40
+# 41
+# 42
+# 43
+# 44
+# 45
+# 46
+# 47
+# 48
+# 49
+# 50
+# 51
+# 52
+# 53
+# 54
+# 55
+# 56
+# 57
+# 58
+# 59
+# 60
