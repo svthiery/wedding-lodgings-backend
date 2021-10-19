@@ -11,6 +11,7 @@ class CreateBuildings < ActiveRecord::Migration[6.0]
       t.boolean :available?
       t.string :reserved_by
       t.string :reserved_by_email
+      t.string :video_url
 
       t.timestamps
     end

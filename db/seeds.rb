@@ -39,7 +39,7 @@ Capsules of coffee, tea, water are at your disposal.
 The bathroom & shower room are equipped as follows:
 Towels are provided.
 1 hair dryer and 1 mirror in the bathroom.
-1 hair dryer and 1 mirror in the bathroom", available?: true)
+1 hair dryer and 1 mirror in the bathroom", available?: true, video_url: "https://youtu.be/TMQTq0zq2DA")
 
 three = Building.create(name: "L'Ecurie", location: "Le parc", price: 900, category: "Apartments", capacity: "18 people", format: "
 1 living room / kitchen / bedroom, 
@@ -61,7 +61,7 @@ Capsules of coffee, tea, water are at your disposal.
 
 The bathrooms are equipped as follows:
 Towels are provided.
-1 hair dryer and 1 mirror in each bathroom", available?: true)
+1 hair dryer and 1 mirror in each bathroom", available?: true, video_url: "https://youtu.be/TMQTq0zq2DA")
 
 four = Building.create(name: "La Maison des Gardes", location: "Le parc", price: 400, category: "Independent house with terrace", capacity: "7 people", format: "
 living room / bedrooms, 
@@ -89,7 +89,7 @@ Capsules of coffee, tea, water are at your disposal.
 The bathroom & shower room are equipped as follows:
 Towels are provided.
 1 hair dryer and 1 mirror in the bathroom.
-1 hair dryer and 1 mirror in the bathroom", available?: true)
+1 hair dryer and 1 mirror in the bathroom", available?: true, video_url: "https://youtu.be/C5RtFkxU7mA")
 
 five = Building.create(name: "L’Epi de Blé", location: "La ferme d'à côté", price: 450, category: "Independent house", capacity: "9 people", format: "
 living room / bedrooms, 3 bedrooms,
@@ -113,7 +113,7 @@ Capsules of coffee, tea, water are at your disposal.
 The bathroom & shower room are equipped as follows:
 1 hair dryer and 1 mirror in the bathroom.
 1 hair dryer and 1 mirror in the bathroom
-Towels are provided.", available?: true)
+Towels are provided.", available?: true, video_url: "https://youtu.be/ts7ew8nbfHw")
 
 six = Building.create(name: "Au Champ d'Avoine", location: "La ferme d'à côté", price: 200, category: "Apartment", capacity: "4 people", format: "
 living room, 
@@ -140,7 +140,7 @@ toaster, kettle, coffee machine, and crockery adapted to the capacity of the hou
 Capsules of coffee, tea, water are at your disposal.
 The Bathroom is equipped as follows:
 Towels are provided.
-1 hair dryer and 1 mirror in the bathroom.", available?: true)
+1 hair dryer and 1 mirror in the bathroom.", available?: true, video_url: "https://youtu.be/fA0iDqGsxRQ")
 
 seven = Building.create(name: "Au Grain d'Orge", location: "La ferme d'à côté", price: 450, category: "Independent house", capacity: "9 people", format: "
 living room / bedrooms, 3 bedrooms, 1 bathroom
@@ -162,11 +162,11 @@ Capsules of coffee, tea, water are at your disposal.
 The bathroom & shower room are equipped as follows:
 1 hair dryer and 1 mirror in the bathroom.
 1 hair dryer and 1 mirror in the bathroom
-Towels are provided.", available?: true)
+Towels are provided.", available?: true, video_url: "https://youtu.be/M39EncgykRE")
 
 eight = Building.create(name: "Le Grenier", location: "La ferme d'à côté", price: 250, category: "Apartment", capacity: "5 people", format: "Everything is on the 1st floor: Equipped kitchen, 2 bedrooms, living room, 1 bathroom,
 1 WC, garden", description: "Everything is on the 1st floor: Equipped kitchen, 2 bedrooms, living room, 1 bathroom,
-1 WC, garden", available?: true)
+1 WC, garden", available?: true, video_url: "https://youtu.be/xmoffxXqCd4")
 
 nine = Building.create(name: "Le Grand Saule", location: "La ferme d'à côté", price: 500, category: "Apartment", capacity: "10 people", format: "
 - Ground floor: Equipped kitchen, 2 bedrooms, living room, 2 bathrooms, 1
@@ -176,9 +176,9 @@ WC, garden
 - Ground floor: Equipped kitchen, 2 bedrooms, living room, 2 bathrooms, 1
 WC, garden
 - 1
-1st floor: 2 bedrooms, a bathroom, 1 WC", available?: true)
+1st floor: 2 bedrooms, a bathroom, 1 WC", available?: true, video_url: "https://youtu.be/T9w2bjAlZy0")
 
-ten = Building.create(name: "La Maison Du Cocher", location: "La ferme d'à côté", price: 0, category: "N/A", capacity: "6 people", format: "N/A", description: "N/A", available?: true)
+ten = Building.create(name: "La Maison Du Cocher", location: "La ferme d'à côté", price: 0, category: "N/A", capacity: "6 people", format: "N/A", description: "N/A", available?: true, video_url: "https://youtu.be/_aYge5CvhCs")
 
 # -------------------- ROOMS -----------------------------------------
 

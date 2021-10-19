@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(version: 2021_10_18_195321) do
     t.string "capacity"
     t.string "format"
     t.boolean "available?"
+    t.string "reserved_by"
+    t.string "reserved_by_email"
+    t.string "video_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
