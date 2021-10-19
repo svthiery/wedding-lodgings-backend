@@ -9,6 +9,8 @@ class CreateBuildings < ActiveRecord::Migration[6.0]
       t.string :capacity
       t.string :format
       t.boolean :available?
+      t.string :reserved_by
+      t.string :reserved_by_email
 
       t.timestamps
     end
