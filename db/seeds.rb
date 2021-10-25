@@ -11,6 +11,8 @@ Room.destroy_all
 Bed.destroy_all
 Person.destroy_all 
 
+# Testing comment
+
 # -------------------- BUILDINGS -----------------------------------------
 
 one = Building.create(name: "La Suite de l'Orangerie", location: "Le parc", price: 250, category: "Independent house with terrace", capacity: "2-5 people", available?: false)
