@@ -8,7 +8,7 @@ class CreateBuildings < ActiveRecord::Migration[6.0]
       t.string :category
       t.string :capacity
       t.string :format
-      t.boolean :available?
+      t.boolean :is_available
       t.string :reserved_by
       t.string :reserved_by_email
       t.string :video_url

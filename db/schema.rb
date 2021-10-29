@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_10_18_195321) do
     t.string "category"
     t.string "capacity"
     t.string "format"
-    t.boolean "available?"
+    t.boolean "is_available"
     t.string "reserved_by"
     t.string "reserved_by_email"
     t.string "video_url"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2021_10_18_195321) do
     t.integer "price"
     t.string "description"
     t.string "bathroom"
-    t.boolean "available?"
+    t.boolean "is_available"
     t.integer "building_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

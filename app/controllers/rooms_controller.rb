@@ -18,6 +18,6 @@ class RoomsController < ApplicationController
     private
 
     def room_params
-        params.permit(:available?)
+        params.permit(:is_available)
     end
 end

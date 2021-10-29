@@ -18,7 +18,7 @@ class BuildingsController < ApplicationController
     private
 
     def building_params
-        params.permit(:available?, :reserved_by, :reserved_by_email)
+        params.permit(:is_available, :reserved_by, :reserved_by_email)
     end
 
 end

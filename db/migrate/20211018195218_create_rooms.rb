@@ -5,7 +5,7 @@ class CreateRooms < ActiveRecord::Migration[6.0]
       t.integer :price
       t.string :description
       t.string :bathroom
-      t.boolean :available?
+      t.boolean :is_available
       t.integer :building_id
 
       t.timestamps
